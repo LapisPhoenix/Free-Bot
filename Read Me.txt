@@ -1,0 +1,17 @@
+If you're reading this then congrats, you've won the giveaway, thank you for participating in the giveaway!
+
+You now get your very own bot customizable bot, free of charge!
+
+Commands Included:
+
+help  (display all commands)
+
+warn  (warn a user)
+rwarn (remove warn)
+warns (list all warns)
+
+mute   (mutes a user if the role exists)
+unmute (removes mute role if the role exists)
+mutes  (list all mutes)
+
+giveaway (Creates an giveaway with prize and random winner)
