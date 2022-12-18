@@ -4,7 +4,7 @@
 # To change a command color, go into the cogs folder and find the file for the command you want to change
 # Then change the color variable to the color you want
 
-token: str = "MTA0OTE1MzM1NDQyNjc0NDg1Mw.G_qURH.lSdPzYQZZzqtMvdRZ3MCOVJXUYekV-TzP2Mt7Y"   # The token for the bot, this is required to run the bot
+token: str = ""   # The token for the bot, this is required to run the bot
 
 prefix: str = "?"  # Changing this will automatically update for help command
 
