@@ -3,7 +3,7 @@ The Bot I'm giving away to someone for free! Took my about 3 weeks to make!
 
 ###
 
-# HOW TO INSTALL
+# HOW TO RUN
 
 1. Either download or clone this repo
 2. Make sure python is installed
