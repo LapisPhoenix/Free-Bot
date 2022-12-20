@@ -1,5 +1,5 @@
-# giveaway-bot
-The bot I'm giving away to someone for free
+# Free Bot for YOU!
+Use my referral code: https://cybrancee.com/client/aff.php?aff=145 to get one month free hosting!
 
 ###
 
