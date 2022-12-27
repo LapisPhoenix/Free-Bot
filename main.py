@@ -16,7 +16,6 @@ from database import create_database
 
 
 def setup_logging():
-    # Logging credit: Fretgfr
     log_fmt = logging.Formatter(
         fmt="%(asctime)s - %(name)s:%(lineno)d - %(levelname)s - %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",
@@ -56,7 +55,7 @@ class MyBot(commands.Bot):
                 _logger.exception("Extension: %s failed to load\n%s", ext, error)
 
         _logger.info("Loaded %s cogs!", len(self.cogs))
-        _logger.info("\nBot is ready!\nPrefix: %s\nDescription %s", settings.prefix, settings.description)
+        _logger.info("\nBot is ready!\nPrefix: %s\nDescription: %s", settings.prefix, settings.description)
 
 
 if __name__ == "__main__":  # Checks if the file is being ran directly
