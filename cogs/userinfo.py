@@ -1,7 +1,7 @@
 from discord import Embed, Member
 from discord.ext import commands
-from settings import Colors
 
+from settings import Colors
 
 userinfo_color = Colors.orange
 

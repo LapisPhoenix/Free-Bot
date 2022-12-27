@@ -1,5 +1,5 @@
-from discord.ext import commands
 from discord import Game
+from discord.ext import commands
 
 
 class Status(commands.Cog):

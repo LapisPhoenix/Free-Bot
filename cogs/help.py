@@ -1,8 +1,9 @@
 # All Help commands are in this file
 
-from discord.ext import commands
-from settings import Colors, prefix
 from discord import Embed
+from discord.ext import commands
+
+from settings import Colors, prefix
 
 help_color = Colors.green
 

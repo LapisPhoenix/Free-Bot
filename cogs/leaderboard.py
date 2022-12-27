@@ -1,8 +1,8 @@
+from discord import Embed
+from discord.ext import commands
+
 from database import leaderboard
 from settings import Colors
-
-from discord.ext import commands
-from discord import Embed
 
 leaderboard_color = Colors.yellow
 

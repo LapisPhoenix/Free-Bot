@@ -1,7 +1,8 @@
-import sqlite3
-from settings import database_name, Leveling
-from tools import Xp
 import random
+import sqlite3
+
+from settings import Leveling, database_name
+from tools import Xp
 
 name = (
     database_name.replace(' ', '_') if database_name.endswith(".db") else database_name.replace(' ', '_') + ".db"

@@ -1,8 +1,8 @@
-from requests import get
 from random import choice
 
-from discord.ext import commands
 from discord import Embed
+from discord.ext import commands
+from requests import get
 
 from settings import Colors
 

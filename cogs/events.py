@@ -2,11 +2,13 @@
 # If you want to add more events, just add them here.
 
 
+from typing import Optional
+
+from discord import Embed, Message
+from discord.ext import commands
+
 from database import add_user, add_xp, get_level
 from settings import Leveling, Welcome
-from discord.ext import commands
-from typing import Optional
-from discord import Message, Embed
 
 
 class Events(commands.Cog):

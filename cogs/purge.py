@@ -1,6 +1,7 @@
-from settings import Colors
 from discord import Embed
 from discord.ext import commands
+
+from settings import Colors
 
 purge_color = Colors.pink
 

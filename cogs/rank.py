@@ -1,7 +1,6 @@
 from discord import Embed
 from discord.ext import commands
 
-
 from database import get_level, get_xp
 from settings import Colors
 

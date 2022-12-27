@@ -3,12 +3,14 @@
 # Want more bots? https://discord.gg/mWSRTKTvMq
 
 
+from asyncio import sleep
+from os import listdir
+
 import discord
 from discord.ext import commands
-from database import create_database
-from os import listdir
+
 import settings
-from asyncio import sleep
+from database import create_database
 
 bot = commands.Bot(
     command_prefix=settings.prefix, description=settings.description, intents=discord.Intents.all()

@@ -1,8 +1,8 @@
-from discord.ext import commands
-from database import add_bans, get_bans
 from discord import Embed, Member
-from settings import Colors
+from discord.ext import commands
 
+from database import add_bans, get_bans
+from settings import Colors
 
 ban_color = Colors.red
 

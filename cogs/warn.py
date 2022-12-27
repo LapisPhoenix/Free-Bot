@@ -1,9 +1,10 @@
-import discord
-from discord.ext import commands
-from database import get_warns, add_warn, remove_warn, add_bans, add_mute, get_mutes
-from settings import Colors, max_warns_ban, max_warns_mute, MuteRole
 from asyncio import sleep
 
+import discord
+from discord.ext import commands
+
+from database import add_bans, add_mute, add_warn, get_mutes, get_warns, remove_warn
+from settings import Colors, MuteRole, max_warns_ban, max_warns_mute
 
 warn_color = Colors.red
 

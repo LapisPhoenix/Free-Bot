@@ -1,6 +1,7 @@
-from discord.ext import commands
-from database import get_kicks, add_kick
 from discord import Embed, Member, User
+from discord.ext import commands
+
+from database import add_kick, get_kicks
 from settings import Colors
 
 kick_color = Colors.orange

@@ -1,6 +1,8 @@
-from settings import Colors, VERSION, prefix, description
-from discord import Embed, __version__ as version_info
+from discord import Embed
+from discord import __version__ as version_info
 from discord.ext import commands
+
+from settings import VERSION, Colors, description, prefix
 
 info_color = Colors.green
 

@@ -1,8 +1,10 @@
+from asyncio import sleep
+
 import discord
 from discord.ext import commands
-from database import get_mutes, add_mute
+
+from database import add_mute, get_mutes
 from settings import Colors, MuteRole, default_mute_time
-from asyncio import sleep
 
 mute_color = Colors.purple
 
