@@ -10,7 +10,6 @@ token: str = ""  # The token for the bot, this is required to run the bot
 prefix: str = "?"  # Changing this will automatically update for help command
 VERSION: str = "1.0.0"  # Current Version of the bot, this is used for the botinfo command
 description: str = ""  # The description of the bot, this doesn't show up, but can be used for other things
-database_name: str = "user_database.db"  # The name of the database file, spaces will be replaced with underscores
 max_warns_mute: int = 3  # The max amount of warns a user can have before they are muted
 max_warns_ban: int = (
     5  # The max amount of warns a user can have before they are banned, set to "None" to disable   (THIS WILL INSTANTLY BAN)
