@@ -4,21 +4,17 @@
 # To change a command color, go into the cogs folder and find the file for the command you want to change
 # Then change the color variable to the color you want
 
+from typing import Optional
+
 token: str = ""  # The token for the bot, this is required to run the bot
-
 prefix: str = "?"  # Changing this will automatically update for help command
-
 VERSION: str = "1.0.0"  # Current Version of the bot, this is used for the botinfo command
-
 description: str = ""  # The description of the bot, this doesn't show up, but can be used for other things
-
 database_name: str = "user_database.db"  # The name of the database file, spaces will be replaced with underscores
-
 max_warns_mute: int = 3  # The max amount of warns a user can have before they are muted
 max_warns_ban: int = (
     5  # The max amount of warns a user can have before they are banned, set to "None" to disable   (THIS WILL INSTANTLY BAN)
 )
-
 default_mute_time: int = 60  # The default time a user is muted for in minutes
 
 
@@ -52,7 +48,7 @@ class Colors:  # Colors for embeds
 
 
 class MuteRole:
-    roleId: int = None  # If you do not add a role ID, the command will not work.
+    roleId: Optional[int] = None  # If you do not add a role ID, the command will not work.
 
 
 class Welcome:
