@@ -1,12 +1,10 @@
 import random
 import sqlite3
 
-from settings import Leveling, database_name
+from settings import Leveling
 from tools import Xp
 
-name = (
-    database_name.replace(' ', '_') if database_name.endswith(".db") else database_name.replace(' ', '_') + ".db"
-)  # Sets the name of the database, makes sure it ends with .db
+name = "database.db"
 debug = False  # Debug mode, useless
 
 
