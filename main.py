@@ -10,28 +10,31 @@ from os import listdir
 import settings
 from asyncio import sleep
 
-bot = commands.Bot(command_prefix=settings.prefix, description=settings.description, intents=discord.Intents.all())   # Creates the bot, with all intents
-bot.remove_command('help')   # Removes the default help command for the custom one
+bot = commands.Bot(
+    command_prefix=settings.prefix, description=settings.description, intents=discord.Intents.all()
+)  # Creates the bot, with all intents
+bot.remove_command('help')  # Removes the default help command for the custom one
 
 
-@bot.event  
+@bot.event
 async def on_ready():
-    create_database()   # Creates the database if it doesn't exist
-    
+    create_database()  # Creates the database if it doesn't exist
+
     loaded = 0
-    
-    for file in listdir('./cogs'):   # Loops through all files in the cogs folder
-        if file.endswith('.py'):   # Check if its a python file
+
+    for file in listdir('./cogs'):  # Loops through all files in the cogs folder
+        if file.endswith('.py'):  # Check if its a python file
             try:
-                await bot.load_extension(f'cogs.{file[:-3]}')   # Load the command
+                await bot.load_extension(f'cogs.{file[:-3]}')  # Load the command
             except Exception as e:
                 print(f'Failed to load file: {file} with error: {e}')
             else:
-                print(f'Loaded File: {file}')   # Print that the command has been loaded
+                print(f'Loaded File: {file}')  # Print that the command has been loaded
                 loaded += 1
     print("Loaded a total of {0} files.".format(loaded))
     await sleep(3)
     print("Bot is ready!\nPrefix: {0}\nDescription: {1}".format(settings.prefix, settings.description))
 
-if __name__ == "__main__":   # Checks if the file is being ran directly
+
+if __name__ == "__main__":  # Checks if the file is being ran directly
     bot.run(settings.token)

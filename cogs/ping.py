@@ -8,7 +8,8 @@ class Ping(commands.Cog):
     @commands.command()
     async def ping(self, ctx):
         await ctx.send(
-            'Pong!\nLatency: **{0}ms**'.format(round(self.bot.latency * 1000, 1)))  # Sends latency in miliseconds, how long it takes for the bot to respond
+            'Pong!\nLatency: **{0}ms**'.format(round(self.bot.latency * 1000, 1))
+        )  # Sends latency in miliseconds, how long it takes for the bot to respond
 
 
 async def setup(bot):

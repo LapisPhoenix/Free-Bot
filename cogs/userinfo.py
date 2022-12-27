@@ -22,9 +22,11 @@ class Userinfo(commands.Cog):
         except Exception:
             pass
         mem_created = member.created_at.strftime(
-            "%a, %#d %B %Y, %I:%M %p UTC")  # Gets the member's account creation date in a readable format
+            "%a, %#d %B %Y, %I:%M %p UTC"
+        )  # Gets the member's account creation date in a readable format
         mem_joined = member.joined_at.strftime(
-            "%a, %#d %B %Y, %I:%M %p UTC")  # Gets the member's join date in a readable format
+            "%a, %#d %B %Y, %I:%M %p UTC"
+        )  # Gets the member's join date in a readable format
         mem_roles = [role.mention for role in member.roles]  # Gets the member's roles, and puts them in a list
 
         embed = Embed(title=f"{mem_name} ({mem_id})", color=userinfo_color)

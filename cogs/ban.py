@@ -20,12 +20,14 @@ class Ban(commands.Cog):
             return await ctx.send("That user is not in this server.")
         elif member.id == self.bot.user.id:
             return await ctx.send(
-                "You can't ban me.")  # Check if the user is trying to ban themselves, or the bot. And Checks if the user is in the server.
+                "You can't ban me."
+            )  # Check if the user is trying to ban themselves, or the bot. And Checks if the user is in the server.
 
         add_bans(member.id)  # Add a ban to the database
         await ctx.guild.ban(member, reason=reason)  # Ban the user
-        embed = Embed(title=f"Banned {member.name}", description=f"{member.mention} has been banned because {reason}.",
-                      color=ban_color)
+        embed = Embed(
+            title=f"Banned {member.name}", description=f"{member.mention} has been banned because {reason}.", color=ban_color
+        )
         embed.add_field(name="Bans", value=f"New Current Ban Count: `{get_bans(member.id)}`")
 
         await ctx.send(f"{ctx.author.mention} banned {member}.", embed=embed)
@@ -37,8 +39,7 @@ class Ban(commands.Cog):
         user = await self.bot.fetch_user(userID)  # Get the user from the ID
 
         if get_bans(user.id) == 0:  # Check the database for bans
-            embed = Embed(title=f"{user.name} is not banned",
-                          color=ban_color)  # If the user is not banned, send this embed
+            embed = Embed(title=f"{user.name} is not banned", color=ban_color)  # If the user is not banned, send this embed
             return await ctx.send(embed=embed)
 
         await ctx.guild.unban(user)  # Unban the user
